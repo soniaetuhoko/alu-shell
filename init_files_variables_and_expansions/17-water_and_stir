@@ -1,0 +1,2 @@
+#!/bin/bash
+result_base_bestchol=$(convert_to_base "$result_decimal" "$BESTCHOL_BASE")
