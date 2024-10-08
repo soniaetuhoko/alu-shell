@@ -1,8 +1,10 @@
 #!/usr/bin/env bash
-# This script is displaying "Best School" 10 times
+# This script is displaying "Best School" 10 times using a while loop
 
-for _ in {1..10}  # Use _ as a placeholder since we don't need the variable
+count=1
+while [ $count -le 10 ]
 do
     echo "Best School"
+    count=$((count + 1))
 done
 
