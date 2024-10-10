@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+# This script loops from 1 to 10 and displays different messages based on the iteration number
+
+count=1  # Initialize count to 1
+
+while [ $count -le 10 ]; do  # Loop while count is less than or equal to 10
+    if [ $count -eq 4 ]; then  # If count is equal to 4
+        echo "bad luck"  # Print "bad luck"
+    elif [ $count -eq 8 ]; then  # If count is equal to 8
+        echo "good luck"  # Print "good luck"
+    else
+        echo "Best School"  # For all other counts, print "Best School"
+    fi
+    count=$((count + 1))  # Increment the count by 1
+done
+
