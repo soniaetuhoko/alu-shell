@@ -1,4 +1,3 @@
 #!/usr/bin/env bash
-#shellcheck
 # This script displays its own PID
 echo $$
