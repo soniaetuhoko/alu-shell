@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# This script sends a termination signal through a FIFO to stop the 4-to_infinity_and_beyond process.
+
+# Define the FIFO path
+PIPE=/tmp/stop_pipe
+
+# Send a termination signal by writing to the FIFO
+if [ -p "$PIPE" ]; then
+    echo "stop" > "$PIPE"
+fi
