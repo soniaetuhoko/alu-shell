@@ -1,10 +1,15 @@
-#!/usr/bin/env bash
-# This script sends a termination signal through a FIFO to stop the 4-to_infinity_and_beyond process.
+#!/bin/bash
 
-# Define the FIFO path
-PIPE=/tmp/stop_pipe
+# Get the PID of the 4-to_infinity_and_beyond process
+PID=$(pgrep -f "4-to_infinity_and_beyond")
 
-# Send a termination signal by writing to the FIFO
-if [ -p "$PIPE" ]; then
-    echo "stop" > "$PIPE"
+if [ -n "$PID" ]; then
+    # Terminate the process
+    kill $PID
+    # Output "2" to indicate success
+    echo "2"
+else
+    # Optionally output nothing or a different message
+    echo "No 4-to_infinity_and_beyond process found."
 fi
+
