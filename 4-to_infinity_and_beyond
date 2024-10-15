@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+
+while true; do
+    echo "To infinity and beyond"
+    sleep 1
+
+    # Check for the presence of a "stop" file
+    if [ -f "stop.txt" ]; then
+        echo "Terminated"
+        break
+    fi
+done
+

@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+# Create a stop file to terminate the process
+touch stop.txt
+
