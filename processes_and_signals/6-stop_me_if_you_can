@@ -1,8 +1,5 @@
 #!/usr/bin/env bash
-# This script creates a signal file to terminate the running 
-# 4-to_infinity_and_beyond process.
+# kills the infinity and beyond  program using sigkill signal
 
-echo "Terminate" > /tmp/stop_signal
-echo "Stop signal sent."
-
-
+# Terminate the infinate process
+pkill -15 "bash ./4-to_infinity_and_beyond" -f
