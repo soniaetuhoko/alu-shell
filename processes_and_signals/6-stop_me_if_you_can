@@ -1,5 +1,8 @@
-#!/usr/bin/env bash
+#!/bin/bash
+# This script creates a signal file to terminate the running 
+# 4-to_infinity_and_beyond process.
 
 echo "Terminate" > /tmp/stop_signal
 echo "Stop signal sent."
+
 
