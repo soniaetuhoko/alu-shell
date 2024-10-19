@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+<<<<<<< HEAD
+<<<<<<< HEAD
+# Bash script that displays lines containing the 'bash' word, thus allowing you to easily get the PID of your bash process
+# shellcheck disable=SC2009
+# Requirement:
+#	-You cannot use pgrep
+
+ps -faux | grep "bash"
+=======
+
+=======
+# Bash script that displays lines containing the 'bash' word, thus allowing you to easily get the PID of your bash process
+>>>>>>> 23149b18ce2827295d1c4580e0a05de53f28a0bd
+# shellcheck disable=SC2009
+# Requirement:
+#	-You cannot use pgrep
+
+<<<<<<< HEAD
+>>>>>>> ae6fae214e6f6abfdbbdd7435ee70b0ddd2b9e32
+=======
+ps -faux | grep "bash"
+>>>>>>> 23149b18ce2827295d1c4580e0a05de53f28a0bd

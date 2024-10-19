@@ -1,0 +1,4 @@
+[submodule "alu-shell"]
+    path = alu-shell
+    url = https://github.com/soniaetuhoko/your-submodule-repo.git
+
