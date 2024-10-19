@@ -7,10 +7,9 @@ PID=$(pgrep -f "4-to_infinity_and_beyond")
 if [ -n "$PID" ]; then
     # Terminate the process
     kill $PID
-    # Output "2" to indicate success
     echo "2"
 else
-    # Optionally output nothing or a different message
     echo "No 4-to_infinity_and_beyond process found."
 fi
+
 
