@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # This script outputs "To infinity and beyond" in an infinite loop 
 # until it detects a signal file indicating it should terminate.
 
