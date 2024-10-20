@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-<<<<<<< HEAD
 # Bash script that displays:
 #	-'To infinity and beyond' indefinitely
 #	-With a 'sleep 2' in between each iteration
@@ -11,16 +10,3 @@ do
     echo "To infinity and beyond"
     sleep 2
 done
-=======
-# This script outputs "To infinity and beyond" indefinitely and responds to SIGTERM.
-
-# Function to handle SIGTERM
-trap 'echo "I am invincible!!!"; exit' SIGTERM
-
-# Infinite loop
-while true; do
-    echo "To infinity and beyond"
-    sleep 2
-done
-
->>>>>>> 16be9e9595446ffe95e506b30b32d188d4b95a8c
