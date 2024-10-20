@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+# This script outputs "To infinity and beyond" in an infinite loop 
+# until it detects a signal file indicating it should terminate.
+
+while true; do
+    echo "To infinity and beyond"
+    sleep 1
+    
+    if [ -f /tmp/stop_signal ]; then
+        echo "Terminated"
+        rm /tmp/stop_signal
+        break
+    fi
+done
+
+
