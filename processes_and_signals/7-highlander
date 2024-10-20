@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+# This scrit outputs "To infinity and beyond" indefinitely and responds to SIGTERM.
 
 # Function to handle SIGTERM
 trap 'echo "I am invincible!!!"; exit' SIGTERM
