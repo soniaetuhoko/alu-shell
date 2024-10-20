@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+# This script outputs "To infinity and beyond" indefinitely and responds to SIGTERM.
+
+# Function to handle SIGTERM
+trap 'echo "I am invincible!!!"; exit' SIGTERM
+
+# Infinite loop
+while true; do
+    echo "To infinity and beyond"
+    sleep 2
+done
+

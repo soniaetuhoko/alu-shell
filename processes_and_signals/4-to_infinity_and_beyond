@@ -1,25 +1,16 @@
 #!/usr/bin/env bash
- HEAD
 # This script outputs "To infinity and beyond" in an infinite loop 
 # until it detects a signal file indicating it should terminate.
- 7b70f209480ef2e15b0ae5b340c62b66bc33dac8
 
 while true; do
     echo "To infinity and beyond"
     sleep 1
- HEAD
     
     if [ -f /tmp/stop_signal ]; then
         echo "Terminated"
         rm /tmp/stop_signal
-
-    # Check for the presence of a "stop" file
-    if [ -f "stop.txt" ]; then
-        echo "Terminated"
- 7b70f209480ef2e15b0ae5b340c62b66bc33dac8
         break
     fi
 done
 
- HEAD
- 7b70f209480ef2e15b0ae5b340c62b66bc33dac8
+
