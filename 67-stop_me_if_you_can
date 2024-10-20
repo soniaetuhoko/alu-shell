@@ -1,0 +1,8 @@
+#!/bin/bash
+
+# This script will kill the 7-highlander process
+# Make sure to check if the process is running before attempting to kill it
+
+# Send SIGTERM to the 7-highlander process
+pkill -f 7-highlander
+

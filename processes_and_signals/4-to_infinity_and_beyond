@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+<<<<<<< HEAD
 # This script runs an infinite loop until it receives a termination signal from a FIFO.
 
 # Create a named pipe (FIFO)
@@ -20,3 +21,20 @@ while true; do
     echo "To infinity and beyond"
     sleep 1
 done
+=======
+# This script outputs "To infinity and beyond" in an infinite loop 
+# until it detects a signal file indicating it should terminate.
+
+while true; do
+    echo "To infinity and beyond"
+    sleep 1
+    
+    if [ -f /tmp/stop_signal ]; then
+        echo "Terminated"
+        rm /tmp/stop_signal
+        break
+    fi
+done
+
+
+>>>>>>> 16be9e9595446ffe95e506b30b32d188d4b95a8c
