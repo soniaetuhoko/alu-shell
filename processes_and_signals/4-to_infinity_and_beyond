@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+# This script runs an infinite loop until it receives a termination signal from a FIFO.
+
+# Create a named pipe (FIFO)
+PIPE=/tmp/stop_pipe
+mkfifo "$PIPE"
+
+# Function to clean up the named pipe on exit
+cleanup() {
+    rm -f "$PIPE"
+}
+trap cleanup EXIT
+
+while true; do
+    # Read from the FIFO, blocking until input is received
+    if read line < "$PIPE"; then
+        echo "Terminated"
+        exit
+    fi
+    echo "To infinity and beyond"
+    sleep 1
+done
